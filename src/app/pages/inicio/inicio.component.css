@@ -1,13 +1,4 @@
-h1 {
-    font-size: 20px;
-    font-weight: 800;
-    float: left;
-    color: #fff;
-    position: relative;
-    font-size: 60px;
-}
-
-
+/* para centrar todo */
 .banner {
     display: flex;
     justify-content: center;
@@ -17,9 +8,9 @@ h1 {
     max-width: 100%;
 }
 
+/* inicio menu */
 .menu {
     font-weight: 800;
-    /*    font-size: 30px; */
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -27,10 +18,16 @@ h1 {
     max-width: 100%;
     margin-right: 20px;
     margin-bottom: -10%;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.menu:hover {
+    transform: scale(1.2);
 }
 
 .menu img {
-    /*    width: 150px; */
     width: 40px;
     height: auto;
 }
@@ -40,25 +37,36 @@ h1 {
     margin-left: 5%;
 }
 
+/* fin menu */
+
+/* inicio titulo  */
+.titulo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -5%;
+}
 
 .banner_title h2 {
     color: #fff;
     /*     font-size: 60px; */
     font-size: 30px;
     font-weight: 800;
-    margin-bottom: -5%;
+
     float: left;
     position: relative;
 }
 
-.banner_title h2 span {
+/* .banner_title h2 span {
     position: absolute;
     right: 0;
     width: 0;
     border-left: 1px solid #000;
-    animation: maquina 5s infinite alternate steps(20);
-    background: linear-gradient(to right, #4896ca, #6974f2);
-}
+    background: linear-gradient(to right, #cddff4, #a1e0fd);
+} */
+
+/* fin titulo */
+
+/* inicio imagen de hola */
 
 .banner_img {
     animation: movimiento 2.5s linear infinite;
@@ -68,8 +76,9 @@ h1 {
     display: block;
     width: 150%;
     height: auto;
-
 }
+
+/* fin imagen hola */
 
 
 /* burbujas */
@@ -150,6 +159,8 @@ h1 {
     animation-duration: 8.5s;
 }
 
+/* fin burbujas */
+
 /* Animaciones */
 @keyframes burbujas {
     0% {
@@ -173,18 +184,7 @@ h1 {
     }
 }
 
-
-@keyframes maquina {
-    from {
-        width: 100%;
-    }
-
-    to {
-        width: 0%;
-    }
-}
-
-
+/* fin animaciones */
 
 /*  media queries */
 
@@ -237,3 +237,5 @@ h1 {
 
     }
 }
+
+/* fin media queries */
