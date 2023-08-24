@@ -1,0 +1,31 @@
+.blog {
+    display: flex;
+    width: 20%;
+    height: 20%;
+    max-width: max-content;
+    position: relative;
+}
+
+.ordenador {
+    position: absolute;
+    display: block;
+    width: 200%;
+    height: auto;
+    background: no-repeat;
+    background-image: url(../../../assets/images/blog_ordenador.png);
+    background-size: contain;
+    background-position-y: 15%;
+}
+
+.movil {
+    position: relative;
+    background-image: url(../../../assets/images/blog_movil.png);
+    background-size: 450% 120%;
+    background-position: center;
+    width: 50%;
+    height: auto;
+    display: block;
+    border-radius: 12.5%;
+    margin-left: 180%;
+    margin-top: 52%;
+}
