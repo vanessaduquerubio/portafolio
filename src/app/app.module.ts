@@ -8,6 +8,8 @@ import { HerramientasComponent } from './pages/herramientas/herramientas.compone
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { NavbarComponent } from './componets/navbar/navbar.component';
+import { CarouselModule, } from 'ngx-owl-carousel-o';
+
 
 
 @NgModule({
@@ -18,10 +20,11 @@ import { NavbarComponent } from './componets/navbar/navbar.component';
     ProyectosComponent,
     ContactoComponent,
     NavbarComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
