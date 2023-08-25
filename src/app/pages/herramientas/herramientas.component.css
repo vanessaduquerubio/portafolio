@@ -1,0 +1,103 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg)
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+    border: none;
+}
+
+.slider span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 2s;
+}
+
+/* 
+article {
+    position: relative;
+    width: 250px;
+    transition: all 300ms ease;
+}
+
+article:hover {
+    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+}
+
+article::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0) 50%, rgba(0, 0, 0) 95%);
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+article:hover::before {
+    opacity: 1;
+}
+
+
+.fotoconfondo {
+    background-color: transparent;
+}
+
+.fotoconfondo img {
+    box-shadow: 0 60px 60px rgba(0, 0, 0, 0.366);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+}
+
+.fotosinfondo img {
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: all 300ms ease;
+    opacity: 0;
+}
+
+article:hover .fotosinfondo img {
+    opacity: 1;
+    transform: translateY(10%);
+} */

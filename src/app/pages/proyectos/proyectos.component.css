@@ -1,0 +1,268 @@
+/* inicio cards */
+.cards {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* fin cards */
+/* inicio card */
+.card {
+    width: 31%;
+    height: 50%;
+    margin: 10px;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+    transition: all 500ms;
+
+}
+
+.card:hover {
+    width: 32%;
+    margin: 10px;
+    ;
+}
+
+.cover {
+    width: 100%;
+    height: 300px;
+    position: relative;
+
+}
+
+.cover .blogfoto {
+    display: block;
+    width: 80%;
+    position: relative;
+    z-index: 1;
+    top: 0px;
+    filter: drop-shadow(5px 5px 4px #0000008d);
+    margin: auto;
+
+}
+
+.card:hover .cover .blogfoto {
+    filter: none;
+}
+
+.cover .img_back {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    transition: all 600ms;
+    background-color: rgb(129, 193, 245);
+}
+
+.card:hover .cover .img_back {
+    bottom: 0;
+
+}
+
+.description {
+    position: relative;
+    height: 300px;
+    background-color: rgb(242, 242, 242);
+    margin-top: -10%;
+    padding: 10%;
+    z-index: 2;
+    border-radius: 0 0 20px 20px;
+    transition: all 500ms;
+    border: none;
+
+
+}
+
+.card:hover .description {
+    padding: 12%;
+}
+
+
+.description h2 {
+    margin-top: 0;
+}
+
+.description p {
+    margin-top: 10px;
+}
+
+.description input {
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    background: #a6a6a6;
+    color: antiquewhite;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+/* fin card */
+
+/* inicio imagen crm */
+.ordenadorcrm {
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: auto;
+    background: no-repeat;
+    background-image: url(../../../assets/images/timehub_usuarios.png);
+    background-size: contain;
+    background-position-y: 15%;
+    margin-top: 30%;
+    transition: all 600ms;
+    border: none;
+}
+
+.card:hover .ordenadorcrm {
+    margin-top: 10%;
+    transform: scale(1.2);
+}
+
+
+.movilcrm {
+    position: absolute;
+    background-image: url(../../../assets/images/timehub_movil.png);
+    background-size: 450% 120%;
+    background-position: center;
+    width: 20%;
+    height: auto;
+    display: block;
+    border-radius: 12.5%;
+    margin-left: 80%;
+    margin-top: 55%;
+    transition: all 600ms;
+    border: none;
+}
+
+.card:hover .movilcrm {
+    margin-top: 35%;
+    transform: scale(1.2);
+}
+
+/* fin imagen crm */
+
+/* inicio foto blog */
+.blogfoto {
+    display: flex;
+    position: relative;
+    border: none;
+    width: 100%;
+
+}
+
+.ordenadorblog {
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: auto;
+    background: no-repeat;
+    background-image: url(../../../assets/images/blog_ordenador.png);
+    background-size: contain;
+    background-position-y: 15%;
+    margin-top: 30%;
+    transition: all 600ms;
+    border: none;
+
+
+}
+
+.card:hover .ordenadorblog {
+    margin-top: 10%;
+    transform: scale(1.2);
+}
+
+
+.movilblog {
+    position: absolute;
+    background-image: url(../../../assets/images/blog_movil.png);
+    background-size: 450% 120%;
+    background-position: center;
+    width: 20%;
+    height: auto;
+    display: block;
+    border-radius: 12.5%;
+    margin-left: 80%;
+    margin-top: 55%;
+    transition: all 600ms;
+    border: none;
+
+}
+
+.card:hover .movilblog {
+    margin-top: 35%;
+    transform: scale(1.2);
+
+}
+
+/* fin imagen blog */
+/* inicio foto portafolio */
+.blogfoto {
+    display: flex;
+    position: relative;
+    border: none;
+    width: 100%;
+
+}
+
+.ordenadorportafolio {
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: auto;
+    background: no-repeat;
+    background-image: url(../../../assets/images/portafolio_ordenador.png);
+    background-size: contain;
+    background-position-y: 15%;
+    margin-top: 30%;
+    transition: all 600ms;
+    border: none;
+
+
+}
+
+.card:hover .ordenadorportafolio {
+    margin-top: 10%;
+    transform: scale(1.2);
+}
+
+
+.movilportafolio {
+    position: absolute;
+    background-image: url(../../../assets/images/portafolio_movil.png);
+    background-size: 450% 120%;
+    background-position: center;
+    width: 20%;
+    height: auto;
+    display: block;
+    border-radius: 12.5%;
+    margin-left: 80%;
+    margin-top: 55%;
+    transition: all 600ms;
+    border: none;
+
+}
+
+.card:hover .movilportafolio {
+    margin-top: 35%;
+    transform: scale(1.2);
+
+}
+
+/* fin foto portafolio*/
+
+@media(max-width:720px) {
+    .card {
+        width: 95%;
+    }
+
+    .card:hover {
+        width: 100%;
+    }
+}
