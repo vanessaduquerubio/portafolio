@@ -29,7 +29,7 @@ p {
 }
 
 .single-chart p {
-    font-size: 70%;
+    font-size: 50%;
 }
 
 .flex-wrapper {
@@ -52,13 +52,13 @@ p {
 }
 
 @keyframes progress {
-    0% {
+    50% {
         stroke-dasharray: 0 100;
     }
 }
 
 .circular-chart {
-    width: 50%;
+    width: 50px;
 }
 
 .circular-chart .circle {
@@ -70,4 +70,15 @@ p {
     font-family: sans-serif;
     font-size: 0.5em;
     text-anchor: middle;
+}
+
+@media(min-width:770px) {
+    .single-chart p {
+        font-size: 80%;
+    }
+
+    .circular-chart {
+        width: 150px;
+    }
+
 }
