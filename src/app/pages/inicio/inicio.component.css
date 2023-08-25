@@ -68,9 +68,6 @@
 
 /* inicio imagen de hola */
 
-.banner_img {
-    animation: movimiento 2.5s linear infinite;
-}
 
 .hola {
     display: block;

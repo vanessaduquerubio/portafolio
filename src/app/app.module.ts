@@ -7,6 +7,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { HerramientasComponent } from './pages/herramientas/herramientas.component';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { NavbarComponent } from './componets/navbar/navbar.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     HerramientasComponent,
     ProyectosComponent,
     ContactoComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

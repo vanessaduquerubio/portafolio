@@ -1,0 +1,118 @@
+/* inicio contactame */
+.contactame {
+    display: flex;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circulo {
+    position: relative;
+    margin-top: -5%;
+    width: 63%;
+    height: 30%;
+}
+
+.btn {
+    position: absolute;
+    margin-top: -6%;
+    background-color: rgb(63, 109, 168);
+
+}
+
+/* fin contactame */
+
+/* inicio redes */
+.redes {
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.redes img {
+    width: 3%;
+    height: auto;
+    margin: 2%;
+}
+
+/* fin redes */
+
+/* inicio señalar */
+
+.señalar {
+    display: flex;
+}
+
+.señalar img {
+    display: block;
+    position: absolute;
+    width: 15%;
+
+}
+
+.arriba {
+    margin-top: 15%;
+    left: 45%;
+    transform: rotate(300deg);
+
+}
+
+.derecha {
+    transform: scale(1.6);
+    left: 10%;
+
+
+}
+
+.izquierda {
+    right: 17%;
+    margin-top: 5%;
+    transform: scaleX(-1);
+
+
+}
+
+.manoabajo {
+    transform: rotate(120deg);
+    top: 15%;
+    left: 40%;
+
+
+}
+
+.manoizquierda {
+    transform: rotate(60deg);
+    top: 25%;
+    left: 15%;
+
+
+}
+
+.manoderecha {
+    transform: rotate(180deg);
+    top: 25%;
+    left: 70%;
+    animation: señalar 0s linear infinite;
+
+}
+
+/* fin señalar */
+/* inicio animacion */
+@keyframes señalar {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* fin animacion */
