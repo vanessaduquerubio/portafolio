@@ -32,9 +32,11 @@
     height: auto;
 }
 
-.menu p {
+.menu a {
     margin-top: 10%;
     margin-left: 5%;
+    text-decoration: none;
+    color: black;
 }
 
 /* fin menu */
@@ -56,13 +58,7 @@
     position: relative;
 }
 
-/* .banner_title h2 span {
-    position: absolute;
-    right: 0;
-    width: 0;
-    border-left: 1px solid #000;
-    background: linear-gradient(to right, #cddff4, #a1e0fd);
-} */
+
 
 /* fin titulo */
 

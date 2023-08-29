@@ -1,15 +1,23 @@
+div {
+    border: none;
+}
+
+
+
 .inicio {
-    height: 100vh;
+    background: rgb(129, 193, 245);
+    border-radius: 64px;
+    height: 80vh;
     color: #000000;
     display: flex;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 20%;
+    margin-bottom: 10%;
 }
 
 .inicio .contenido-banner {
-    padding: 20px;
+    padding: 10px;
     background-color: rgb(129, 193, 245);
-    max-width: 800px;
     margin: auto;
     text-align: center;
     border-radius: 40px;
@@ -19,7 +27,7 @@
     margin-top: 40px;
     border: 10px solid #ffffff;
     display: block;
-    width: 60%;
+    width: 25%;
     margin: auto;
     border-radius: 100%;
 }
@@ -32,6 +40,44 @@
 .inicio .contenido-banner p {
     font-size: 15px;
     font-weight: normal;
+}
+
+.sobremi {
+    padding: 0 10%;
+}
+
+.sobremi button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.sobremi button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(85, 178, 255);
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay {
+    width: 100%;
 }
 
 .inicio .contenido-banner .redes a {

@@ -11,26 +11,31 @@
         <div class="collapse navbar-collapse" id="basic-navbar-nav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" (click)="onUpdateActiveLink('home')">Inicio</a>
+                    <a class="nav-link" (click)="onUpdateActiveLink('inicio')" href="inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [class.active]="activeLink === 'skills'" href="#herramientas"
+                    <a class="nav-link" [class.active]="activeLink === 'herramientas'" href="#herramientas"
                         (click)="onUpdateActiveLink('skills')">Herramientas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [class.active]="activeLink === 'projects'" href="#proyectos"
+                    <a class="nav-link" [class.active]="activeLink === 'proyectos'" href="#proyectos"
                         (click)="onUpdateActiveLink('projects')">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [class.active]="activeLink === 'sobremi'" href="#sobremi"
+                        (click)="onUpdateActiveLink('projects')">Sobre mi</a>
                 </li>
             </ul>
             <span class="navbar-text">
                 <div class="social-icon">
-                    <a href="#"><img src="../../../assets/images/github.png" alt="" /></a>
-                    <a href="#"><img src="../../../assets/images/gmail.png" alt="" /></a>
-                    <a href="#"><img src="../../../assets/images/linkedin.png" alt="" /></a>
+                    <a href="https://github.com/vanessaduquerubio"><img src="../../../assets/images/github.png"
+                            alt="" /></a>
+                    <a href="mailto:vanessaduquerubio@gmail.com"><img src="../../../assets/images/gmail.png"
+                            alt="" /></a>
+                    <a href="https://www.linkedin.com/in/vanessaduquefullstackdeveloped/"><img
+                            src="../../../assets/images/linkedin.png" alt="" /></a>
                 </div>
-                <a href="#connect">
-                    <button class="vvd"><span>Let’s Connect</span></button>
-                </a>
+
             </span>
         </div>
     </div>

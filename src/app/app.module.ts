@@ -7,8 +7,9 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { HerramientasComponent } from './pages/herramientas/herramientas.component';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
-import { NavbarComponent } from './componets/navbar/navbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { CarouselModule, } from 'ngx-owl-carousel-o';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -20,6 +21,7 @@ import { CarouselModule, } from 'ngx-owl-carousel-o';
     ProyectosComponent,
     ContactoComponent,
     NavbarComponent,
+    FooterComponent,
 
   ],
   imports: [
