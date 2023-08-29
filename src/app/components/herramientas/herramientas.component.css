@@ -1,0 +1,80 @@
+.skill-bx {
+    background: rgb(129, 193, 245);
+    border-radius: 64px;
+    text-align: center;
+    padding: 10%;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+p {
+    color: black;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 24px;
+}
+
+.single-chart {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-chart p {
+    font-size: 70%;
+}
+
+.flex-wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+    50% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.circular-chart {
+    width: 50px;
+}
+
+.circular-chart .circle {
+    stroke: #3c9ee5;
+}
+
+.percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
+
+@media(min-width:770px) {
+    .single-chart p {
+        font-size: 110%;
+    }
+
+    .circular-chart {
+        width: 150px;
+    }
+
+}

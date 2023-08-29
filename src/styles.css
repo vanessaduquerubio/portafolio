@@ -10,7 +10,9 @@
 }
 
 body {
+    background: linear-gradient(to right, #cddff4, #9de0ff);
+}
 
-    background: linear-gradient(to right, #4896ca, #6974f2);
-    overflow: hidden;
+div {
+    border: none;
 }
