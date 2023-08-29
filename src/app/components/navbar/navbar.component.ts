@@ -7,11 +7,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  activeLink = 'inicio';
-  scrolled = false;
-
-  onUpdateActiveLink(value: string) {
-    this.activeLink = value;
-  }
-
 }

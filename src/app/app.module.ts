@@ -9,7 +9,7 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CarouselModule, } from 'ngx-owl-carousel-o';
-import { FooterComponent } from './components/footer/footer.component';
+
 
 
 
@@ -21,7 +21,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ProyectosComponent,
     ContactoComponent,
     NavbarComponent,
-    FooterComponent,
+
 
   ],
   imports: [
